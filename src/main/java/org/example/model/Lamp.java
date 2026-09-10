@@ -7,11 +7,15 @@ public class Lamp {
     private boolean battery;
     private int globRating;
 
-    public Lamp(LampType style, int globRating, boolean battery) {
+    public Lamp(LampType style, boolean battery, int globRating) {
         this.style = style;
-        this.globRating = globRating;
         this.battery = battery;
+        this.globRating = globRating;
     }
+
+    public Lamp(LampType lampType, int i, boolean b) {
+    }
+
     public void turnOn(){
         System.out.println("Lamp is being turned on.");
     }

@@ -1,3 +1,4 @@
+import org.example.Bedroom;
 import org.example.model.*;
 import org.example.model.enums.LampType;
 import org.example.model.enums.PaintColor;
@@ -74,7 +75,7 @@ public class MainTest {
         Field pillowsField = bed.getClass().getDeclaredField("pillows");
         Field heightField = bed.getClass().getDeclaredField("height");
         Field sheetsField = bed.getClass().getDeclaredField("sheets");
-        Field quiltsField = bed.getClass().getDeclaredField("quilts");
+        Field quiltsField = bed.getClass().getDeclaredField("quilt");
 
         assertEquals(styleField.getModifiers(), 2);
         assertEquals(pillowsField.getModifiers(), 2);
